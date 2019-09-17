@@ -25,6 +25,7 @@ window.addEventListener("load",()=>{
                 // it's like a domino effect
                 .then(data =>{
                     // console.log(data);
+                    console.log(data);
                     const { temperature , summary , icon} = data.currently;
                     temperatureDegree.textContent = temperature;
                     temperatureDescription.textContent = summary;
