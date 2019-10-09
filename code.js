@@ -31,6 +31,7 @@ window.addEventListener("load",()=>{
                     temperatureDescription.textContent = summary;
                     locationTimezone.textContent = data.timezone;
                     //to use icons i downloaded a zipfile of the code from skycons github account
+                    // the skycons are not working, i should decode it later
                     setIcon(icon,document.querySelector(".icon"));
                 })
             })
@@ -39,6 +40,7 @@ window.addEventListener("load",()=>{
     else{
         H1.textContent = "yooo, dude";
     }
+    // FIXME: start from here and debug this function!
     function setIcon(icon,iconId){
         const skycons = new Skycons({color:"white"});
         const currentIcon = icon.replace(/-/g,"_").toUpperCase();
