@@ -31,9 +31,12 @@ window.addEventListener("load",()=>{
                     temperatureDegree.textContent = temperature;
                     temperatureDescription.textContent = summary;
                     locationTimezone.textContent = data.timezone;
+                   
                     //to use icons i downloaded a zipfile of the code from skycons github account
                     // the skycons are not working, i should decode it later
-                    setIcon(icon,document.querySelector(".icon"));
+                    
+                  
+                    setIcons(icon,document.querySelector("#yo"));
                 })
             })
    
@@ -41,12 +44,13 @@ window.addEventListener("load",()=>{
     else{
         H1.textContent = "yooo, dude";
     }
-    // FIXME: start from here and debug this function!
-    function setIcon(icon,iconId){
-        const skycons = new Skycons({color:"white"});
+    // FIXME: start from here and debug this function!//FIXED: there is a bug, the code is fine!
+    function setIcons(icon,iconId){
         const currentIcon = icon.replace(/-/g,"_").toUpperCase();
-        
+        const skycons = new Skycons({"color":"white"});
+       //const currentIcon = icon.replace(/-/g,"_").toUpperCase();
+    
         skycons.play();
-       return skycons.set(iconId,skycons[currentIcon]);
+        return skycons.set(iconId,"RAIN");
     }
 });
