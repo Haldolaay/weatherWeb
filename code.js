@@ -51,6 +51,6 @@ window.addEventListener("load",()=>{
        //const currentIcon = icon.replace(/-/g,"_").toUpperCase();
     
         skycons.play();
-        return skycons.set(iconId,"RAIN");
+        return skycons.set(iconId,currentIcon);
     }
 });
