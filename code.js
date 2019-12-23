@@ -42,7 +42,7 @@ window.addEventListener("load",()=>{
    
     }
     else{
-        H1.textContent = "yooo, dude";
+        H1.textContent = "error";
     }
     // FIXME: start from here and debug this function!//FIXED: there is a bug, the code is fine!
     function setIcons(icon,iconId){
