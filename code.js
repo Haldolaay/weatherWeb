@@ -14,7 +14,7 @@ window.addEventListener("load",()=>{
             lat = position.coords.latitude;
             // darksky api is free to use
             const proxy = `https://cors-anywhere.herokuapp.com/`// this proxy is easy to use, remember it!
-            const api =`${proxy}https://api.darksky.net/forecast/1879494e658c054e3ee8c74ae2d24b58/${lat},${long}`;
+            const api =``;
 
                      // fetch is gonna work when the api is succesful
         fetch(api)
